@@ -15,4 +15,4 @@ RUN yum -y install hostname;\
 
 USER splunk
 
-ENTRYPOINT [ "/opt/splunk/bin/splunk", "start", "--no-prompt", "--answer-yes" ]
+ENTRYPOINT [ "/opt/splunk/bin/splunk", "start", "--no-prompt", "--answer-yes" "--nodaemon" ]
